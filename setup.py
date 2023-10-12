@@ -48,10 +48,11 @@ setuptools.setup(
     install_requires=[
         'absl-py',
         'cached_property',
-        'clu @ git+https://github.com/google/CommonLoopUtils#egg=clu',
+        'clu @ git+https://github.com/google/CommonLoopUtils@32c2b22de30fc09829550173cfc3da9492814ae2',
         'flax @ git+https://github.com/google/flax#egg=flax',
         'fiddle >= 0.2.5',
         'gin-config',
+        'optax==0.1.7',
         f'jax >= {_jax_version}',
         f'jaxlib >= {_jaxlib_version}',
         (
@@ -59,7 +60,6 @@ setuptools.setup(
             ' git+https://github.com/google-research/jestimator#egg=jestimator'
         ),
         'numpy',
-        'optax @ git+https://github.com/deepmind/optax#egg=optax',
         'orbax-checkpoint',
         'seqio @ git+https://github.com/google/seqio#egg=seqio',
         'tensorflow-cpu',
